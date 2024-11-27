@@ -10,7 +10,7 @@ const Start = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.get('http://localhost:3002/verify')
+    axios.get('https://dynamic-hr-backend-8zgg.onrender.com/verify')
       .then(result => {
         if (result.data.Status) {
           if (result.data.role === "admin") {

@@ -29,7 +29,7 @@ import EmpEnroll from './components/Admin/Enrollment.jsx';
 import ModuleDashboard from './components/Employee/Module.jsx';
 import { UserProvider } from './UserContext';
 
-axios.defaults.baseURL = 'http://localhost:3002';
+axios.defaults.baseURL = 'https://dynamic-hr-backend-8zgg.onrender.com';
 axios.defaults.withCredentials = true;
 
 function App() {

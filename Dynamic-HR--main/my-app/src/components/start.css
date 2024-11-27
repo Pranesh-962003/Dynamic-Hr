@@ -1,0 +1,40 @@
+
+
+
+.activeButton.active{
+  border-radius: 20px;
+  background-color: #FF4B2B; 
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.loginPage {
+  background-image: url('https://img.freepik.com/free-photo/flat-lay-clean-office-desk_23-2148219267.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.active-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+  }
+  
+  .line-admin {
+    width: 50%; /* Adjust to your layout */
+    left: 50%; /* Start from the middle */
+  }
+  
+  .line-employee {
+    width: 50%; /* Adjust to your layout */
+    left: 0; /* Start from the left */
+  }
+
+  

@@ -13,6 +13,19 @@ mongoose.connect("mongodb+srv://admin:admin@cluster0.uvq543m.mongodb.net/")
 
 const app = express();
 //middleware
+
+const cors = require('cors');
+
+const corsOptions = {
+    origin: ['http://localhost:3000', 'https://hr-frontend-p7hg.vercel.app'], // Add your frontend URLs here
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // List the HTTP methods you allow
+    credentials: true, // Allow cookies if needed
+};
+
+app.use(cors(corsOptions));
+
+
+
 app.use(express.json())
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: false }))
